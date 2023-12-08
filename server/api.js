@@ -30,7 +30,7 @@ router.route('/agent').get((req, res) =>{
 router.route('/agent/:id').get((req, res)=>{
     dboperations.getAgent(req.params.id).then(result => {
         res.json(result);
-        // console.log("Agent with id: ${agent}");
+        console.log("Agent with id: ${agent}");
     })
 })
 
