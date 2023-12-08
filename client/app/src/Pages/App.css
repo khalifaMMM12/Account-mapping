@@ -1,0 +1,28 @@
+.container{
+ background-color: rgb(235, 231, 231);
+ width: 200px;
+ /* height: 100px; */
+}
+
+.card{
+    width: 500px;
+}
+
+/* ACCOUNT OFFICER STYLE */
+.new-mapped-account{
+    margin-left: 150px;
+}
+
+.mapped-old-account{
+    margin-left: 100px;
+}
+
+.map-img{
+    width: 80px;
+    height: 80px;
+}
+
+.mapped-accounts{
+    display: hide;
+}
+
