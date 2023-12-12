@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-const expand = ['lg', 'sm', 'md', 'xl', 'xxl'];
+const expand = ['xxl'];
 
 function NavigationBar() {
   return (
@@ -16,7 +16,7 @@ function NavigationBar() {
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-${expandValue}`}
             aria-labelledby={`offcanvasNavbarLabel-expand-${expandValue}`}
-            placement="end"
+            placement="start"
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expandValue}`}>
