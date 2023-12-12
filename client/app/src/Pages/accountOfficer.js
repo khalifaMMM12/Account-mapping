@@ -1,18 +1,18 @@
 import React from 'react'; 
-
 import Card from 'react-bootstrap/Card'
 import './App.css';
+
 // import TestChart from '../components/MapChart.js';
 
 
 function Officer() {
+  
   return (
     <>
       {/* <TestChart/>
       <div className='m-3  p-4 shadow'>
         <h4>Account Officer</h4>
       </div> */}
-
       <div className='row p-4 my-3'>
         <Card style={{ width: '18rem' }} className='m-3 shadow col'>
           <Card.Body>
@@ -45,6 +45,7 @@ function Officer() {
           </Card.Body>
         </Card>
       </div>
+
 
       {/* <div className='row mapped-accounts'>
         <div className='new-mapped-account col-3'>
