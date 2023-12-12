@@ -2,16 +2,16 @@ import React from 'react';
 
 import Card from 'react-bootstrap/Card'
 import './App.css';
-import TestChart from '../components/MapChart.js';
+// import TestChart from '../components/MapChart.js';
 
 
 function Officer() {
   return (
     <>
-      <TestChart/>
+      {/* <TestChart/>
       <div className='m-3  p-4 shadow'>
         <h4>Account Officer</h4>
-      </div>
+      </div> */}
 
       <div className='row p-4 my-3'>
         <Card style={{ width: '18rem' }} className='m-3 shadow col'>
@@ -46,7 +46,7 @@ function Officer() {
         </Card>
       </div>
 
-      <div className='row mapped-accounts'>
+      {/* <div className='row mapped-accounts'>
         <div className='new-mapped-account col-3'>
           <Card style={{ width: '20rem', height: 'auto' }} className='btn shadow-sm'>
             <div className='d-flex align-items-center'>
@@ -74,11 +74,11 @@ function Officer() {
             </div>  
           </Card>
         </div>
-      </div>
+      </div> */}
 
-      <div style={{ width: '400px' }} >
+      {/* <div style={{ width: '400px' }} >
       <canvas id="AccountChart" width="400" height="200"></canvas>
-      </div>
+      </div> */}
     </>
   )
 }
