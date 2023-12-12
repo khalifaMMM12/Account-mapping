@@ -5,15 +5,14 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import App from './App.js';
 import Navbar from './components/navbar.js';
- import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Router>
+  <BrowserRouter>
     <Navbar/>
     <App/>
-
-  </Router>
+  </BrowserRouter>
  
 );
 
