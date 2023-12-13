@@ -1,18 +1,18 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+// import Form from 'react-bootstrap/Form';
+// import Nav from 'react-bootstrap/Nav';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
+// import Offcanvas from 'react-bootstrap/Offcanvas';
 
-const expand = ['xxl'];
+// const expand = ['xxl'];
 
 function NavigationBar() {
   return (
     <>
-      {expand.map((expandValue) => (
-        <Navbar key={expandValue} expand={expandValue} style={{ backgroundColor: "blue" }}>
-          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expandValue}`} />
+      {/* {expand.map((expandValue) => ( */}
+        <Navbar style={{ backgroundColor: "blue" }}>
+          {/* <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expandValue}`} />
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-${expandValue}`}
             aria-labelledby={`offcanvasNavbarLabel-expand-${expandValue}`}
@@ -51,7 +51,7 @@ function NavigationBar() {
                 <Button variant="outline-success">Search</Button>
               </Form>
             </Offcanvas.Body>
-          </Navbar.Offcanvas>
+          </Navbar.Offcanvas> */}
 
           <Navbar.Brand style={{ color: "white", paddingLeft: "20px" }}>
             <h3>Premium Pension</h3>
@@ -60,7 +60,7 @@ function NavigationBar() {
             <Button className='btn-primary'><i className="bi bi-box-arrow-in-left"></i>Logout</Button>
           </Navbar.Collapse>
         </Navbar>
-      ))}
+      {/* ))} */}
     </>
   );
 }

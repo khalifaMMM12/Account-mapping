@@ -4,16 +4,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import App from './App.js';
-import Navbar from './components/navbar.js';
 import { BrowserRouter } from 'react-router-dom'
-import Sidebar from './components/sidebar.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <Navbar/>
+   
+    {/* <Navbar/> */}
     <App/>
-    <Sidebar/>
   </BrowserRouter>
  
 );

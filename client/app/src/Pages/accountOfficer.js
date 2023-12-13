@@ -13,7 +13,7 @@ function Officer() {
       <div className='m-3  p-4 shadow'>
         <h4>Account Officer</h4>
       </div> */}
-      <div className='row p-4 my-3'>
+      <div className='row flex-nowrap p-4 my-3'>
         <Card style={{ width: '18rem' }} className='m-3 shadow col'>
           <Card.Body>
             <Card.Title>AUM</Card.Title>
@@ -26,7 +26,7 @@ function Officer() {
         </Card>
         <Card style={{ width: '18rem' }} className='m-3 shadow btn col'>
           <Card.Body>
-            <Card.Title>Account Mapped</Card.Title>
+            <Card.Title>Records</Card.Title>
             {/* <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle> */}
             <Card.Text>
             </Card.Text>
@@ -36,7 +36,7 @@ function Officer() {
         </Card>
         <Card style={{ width: '18rem' }} className='m-3 shadow col'>
           <Card.Body>
-            <Card.Title>Mapped employers</Card.Title>
+            <Card.Title>Pins</Card.Title>
             {/* <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle> */}
             <Card.Text>
             </Card.Text>
