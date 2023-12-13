@@ -1,7 +1,6 @@
 import React from 'react'; 
 import Card from 'react-bootstrap/Card'
 import './App.css';
-
 // import TestChart from '../components/MapChart.js';
 
 

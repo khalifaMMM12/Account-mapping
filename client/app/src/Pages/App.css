@@ -25,16 +25,6 @@
 .mapped-accounts{
     display: hide;
 }
-.body{
-    display:flex;
-    background-color: rgb(255, 255, 255);
 
-}
-.left{
-    flex:3;
-    background-color: rgb(4, 19, 131);
-}
-.right{
-    flex:7;
-}
+
 
