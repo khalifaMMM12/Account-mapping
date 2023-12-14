@@ -64,17 +64,25 @@ function createAgent() {
 
             <Col md='4'>
               <Form.Group className='mb-4'>
-                <Form.Label>Zone</Form.Label>
+                <Form.Label>Sate</Form.Label>
                 <Form.Control as='select'>
                   <option disabled>Choose option</option>
                 </Form.Control>
               </Form.Group>
             </Col>
 
-
             </Row>
 
             <Row>
+
+            <Col md='4'>
+              <Form.Group className='mb-4'>
+                <Form.Label>Zone</Form.Label>
+                <Form.Control as='select'>
+                  <option disabled>Choose option</option>
+                </Form.Control>
+              </Form.Group>
+            </Col>
 
             <Col md='4'>
               <Form.Group className='mb-4'>

@@ -57,8 +57,8 @@ function LoginForm (){
     }
 
   return (
-    <div className='mt-5'>
-      <div className='row justify-content-center '>
+    <div className='m-5'>
+      <div className='row'>
         <div className='col-md-5'>
           <div className='card m-4 shadow-lg'>
             <div className='card-body'>
