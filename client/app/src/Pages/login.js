@@ -4,8 +4,6 @@ import Form from 'react-bootstrap/Form';
 import Inputgroup from 'react-bootstrap/InputGroup';
 import './App.css';
 import axios from 'axios';
-// import { useNavigate } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
 
 function LoginForm (){
   const [username, setusername] = useState('');
@@ -14,7 +12,6 @@ function LoginForm (){
   const [passwordInput, setPasswordInput] = useState("");
 
   const[error, setError] = useState('')
-  const windows = useLocation();
 
 
   const forLogin = async () => {  
@@ -31,7 +28,9 @@ function LoginForm (){
       if (code === 200){
     
         setError('')
-        windows.location.href="/officer"
+        console.log(code)
+        window.location.href = "/officer"
+
       }else{
         setError(msg)
       }
