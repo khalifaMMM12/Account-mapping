@@ -1,7 +1,7 @@
 import React from 'react'; 
 import {  Routes, Route } from 'react-router-dom'
 import Navbar from './components/navbar.js';
-import Login from './Pages/login-page.js';
+import Login from './Pages/login.js';
 import Officer from './Pages/accountOfficer';
 import Sidebar from './components/sidebar.js';
 import CreateAgent from './Pages/createAgent.js'

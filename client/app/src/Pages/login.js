@@ -4,8 +4,8 @@ import Form from 'react-bootstrap/Form';
 import Inputgroup from 'react-bootstrap/InputGroup';
 import './App.css';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
-// import { useLocation } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 function LoginForm (){
   const [username, setusername] = useState('');
@@ -14,11 +14,8 @@ function LoginForm (){
   const [passwordInput, setPasswordInput] = useState("");
 
   const[error, setError] = useState('')
-  const login = useNavigate();
-  // const login = useLocation();
-  console.log(login.pathname);
-  
-console.log(username)
+  const windows = useLocation();
+
 
   const forLogin = async () => {  
     try {
@@ -32,14 +29,14 @@ console.log(username)
       console.log(msg); 
 
       if (code === 200){
-
+    
         setError('')
-
+        windows.location.href="/officer"
       }else{
-          setError(msg)
+        setError(msg)
       }
     } catch (error) {
-      console.error(error.response.data); 
+      // console.error(error.response.data); 
     }
   };
 
@@ -81,7 +78,7 @@ console.log(username)
 
 
                   <Inputgroup>
-                  <input type={passwordType} onChange={handlePasswordChange} value={passwordInput} name="password" class="form-control" placeholder="Password" />
+                  <input type={passwordType} onChange={handlePasswordChange} value={passwordInput} name="password" className="form-control" placeholder="Password" />
                       <button className="btn btn-outline-secondary" onClick={togglePassword} >
                       { passwordType==="password"? <i className="bi bi-eye-slash"></i> :<i className="bi bi-eye"></i> }
                       </button>
