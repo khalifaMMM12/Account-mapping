@@ -17,10 +17,11 @@ function createAgent() {
 
               <Col md='4' className='mb-4'>
                 <Form.Group>
-                  <Form.Label className="">Status</Form.Label>
+                  <Form.Label className="">Agent Type</Form.Label>
                   <div>
-                    <Form.Check inline label='Is BD' type='radio' name='gender'/>
-                    <Form.Check inline label='Is Exited' type='radio' name='gender'/>
+                    <Form.Check inline label='BD' type='radio' name='agent'/>
+                    <Form.Check inline label='Not BD' type='radio' name='agent'/> 
+                    <Form.Check inline label='External' type='radio' name='agent'/> 
                   </div>
                 </Form.Group>
               </Col>
@@ -47,7 +48,7 @@ function createAgent() {
             <Col md='4'>
               <Form.Group className='mb-4'>
                 <Form.Label>Directorate</Form.Label>
-                <Form.Control as='select'>
+                <Form.Control as='select' className="form-select">
                   <option disabled>Choose option</option>
                 </Form.Control>
               </Form.Group>
@@ -56,7 +57,7 @@ function createAgent() {
             <Col md='4'>
               <Form.Group className='mb-4'>
                 <Form.Label>Branch</Form.Label>
-                <Form.Control as='select'>
+                <Form.Control as='select' className="form-select">
                   <option disabled>Choose option</option>
                 </Form.Control>
               </Form.Group>
@@ -64,8 +65,8 @@ function createAgent() {
 
             <Col md='4'>
               <Form.Group className='mb-4'>
-                <Form.Label>Sate</Form.Label>
-                <Form.Control as='select'>
+                <Form.Label>State</Form.Label>
+                <Form.Control as='select' className='form-select'>
                   <option disabled>Choose option</option>
                 </Form.Control>
               </Form.Group>
@@ -78,7 +79,7 @@ function createAgent() {
             <Col md='4'>
               <Form.Group className='mb-4'>
                 <Form.Label>Zone</Form.Label>
-                <Form.Control as='select'>
+                <Form.Control as='select' className="form-select">
                   <option disabled>Choose option</option>
                 </Form.Control>
               </Form.Group>
@@ -87,7 +88,7 @@ function createAgent() {
             <Col md='4'>
               <Form.Group className='mb-4'>
                 <Form.Label>Team</Form.Label>
-                <Form.Control as='select'>
+                <Form.Control as='select' className="form-select">
                   <option disabled>Choose option</option>
                 </Form.Control>
               </Form.Group>
@@ -96,7 +97,7 @@ function createAgent() {
             <Col md='4'>
               <Form.Group className='mb-4'>
                 <Form.Label>Role</Form.Label>
-                <Form.Control as='select'>
+                <Form.Control as='select' className="form-select">
                   <option disabled>Choose option</option>
                 </Form.Control>
               </Form.Group>
@@ -105,7 +106,7 @@ function createAgent() {
             <Col md='4'>
               <Form.Group className='mb-4'>
                 <Form.Label>TeamLead</Form.Label>
-                <Form.Control as='select'>
+                <Form.Control as='select' className="form-select">
                   <option disabled>Choose option</option>
                 </Form.Control>
               </Form.Group>
