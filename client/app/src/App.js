@@ -11,6 +11,7 @@ function App() {
   return (
   <>
     <div className="container-fluid">
+<<<<<<< Updated upstream
       <div className="row flex-nowrap">
           <div className="col-auto col-md-3 col-xl-2 px-sm-2 px-0" style={{backgroundColor: 'navy'}}>
               <Sidebar/>
@@ -25,6 +26,21 @@ function App() {
               </Routes>
           </div>
       </div>
+=======
+    <div className="row flex-nowrap">
+        <div className="col-auto col-md-3 col-xl-2 px-sm-2 px-0" style={{backgroundColor: '#2e3650'}}>
+            <Sidebar/>
+        </div>
+        <div className="col" style={{padding: '0 0'}}>
+            <Navbar/>
+            <Routes>
+              <Route path="/" element={<Login />} />
+              <Route path="/officer" element={<Officer />} />
+              <Route path="/sidebar" element={<Sidebar />} />
+              <Route path="/agent" element={<CreateAgent />} />
+            </Routes>
+        </div>
+>>>>>>> Stashed changes
     </div>
   </>
 
