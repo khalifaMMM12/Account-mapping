@@ -6,13 +6,20 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import App from './App.js';
 import { BrowserRouter } from 'react-router-dom'
 // import Sidebar from './components/sidebar.js';
+// import Login from './Pages/login.js';
+import "./scss/volt.scss";
+import "react-datetime/css/react-datetime.css";
+import Navtest from './components/navtest';
+import Sidetest from './components/sidetest.js';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-   
-    <App/>
+    {/* <Login/> */}
+    {/* <App/> */}
+    <Sidetest/>
+    <Navtest/>
   </BrowserRouter>
  
 );
