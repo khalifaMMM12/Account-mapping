@@ -9,17 +9,17 @@ import { BrowserRouter } from 'react-router-dom'
 // import Login from './Pages/login.js';
 import "./scss/volt.scss";
 import "react-datetime/css/react-datetime.css";
-import Navtest from './components/navtest';
-import Sidetest from './components/sidetest.js';
+// import Navtest from './components/navtest';
+// import Sidetest from './components/sidetest.js';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    {/* <Login/> */}
-    {/* <App/> */}
-    <Sidetest/>
-    <Navtest/>
+    {/* <Login/>   */}
+    <App/>
+    {/* <Sidetest/> */}
+    {/* <Navtest/> */}
   </BrowserRouter>
  
 );

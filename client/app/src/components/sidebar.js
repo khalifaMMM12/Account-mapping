@@ -1,12 +1,12 @@
 import { Link, NavLink } from 'react-router-dom';
 import {
-  ProSidebar,
+  ProSidebarProvider,
   Menu,
   MenuItem,
   SubMenu,
-  SidebarHeader,
-  SidebarFooter,
-  SubMenuContent
+  // SidebarHeader,
+  // SidebarFooter,
+  SidebarContext // Replace SubMenuContent with SidebarContent
 } from 'react-pro-sidebar';
 
 import {
@@ -19,7 +19,6 @@ import {
   FaRegLaughWink,
   FaHeart
 } from 'react-icons/fa';
-// import sidebarBg from '../assets/bg1.jpg';
 
 const Sidebar = ({
   image,
@@ -29,15 +28,14 @@ const Sidebar = ({
   handleCollapsedChange
 }) => {
   return (
-    <ProSidebar
-      // image={image ? sidebarBg : false}
+    <Sidebar
       collapsed={collapsed}
       toggled={toggled}
       onToggle={handleToggleSidebar}
       breakPoint="md"
     >
       {/* Header */}
-      <SidebarHeader>
+      {/* <SidebarHeader> */}
         <Menu iconShape="circle">
           {collapsed ? (
             <MenuItem
@@ -63,9 +61,10 @@ const Sidebar = ({
             </MenuItem>
           )}
         </Menu>
-      </SidebarHeader>
+      {/* </SidebarHeader> */}
       {/* Content */}
-      <SubMenuContent>
+      <SidebarContext>
+        {/* Use SubMenu directly within Menu */}
         <Menu iconShape="circle">
           <MenuItem
             icon={<FaTachometerAlt />}
@@ -74,7 +73,6 @@ const Sidebar = ({
             Dashboard
             <NavLink to="/" />
           </MenuItem>
-          {/* <MenuItem icon={<FaGem />}>Components </MenuItem> */}
           <MenuItem icon={<FaGem />}>
             Components <Link to="/components" />
           </MenuItem>
@@ -105,9 +103,9 @@ const Sidebar = ({
             </SubMenu>
           </SubMenu>
         </Menu>
-      </SubMenuContent>
+      </SidebarContext>
       {/* Footer */}
-      <SidebarFooter style={{ textAlign: 'center' }}>
+      {/* <SidebarFooter style={{ textAlign: 'center' }}>
         <div className="sidebar-btn-wrapper" style={{ padding: '16px' }}>
           <Link
             className="sidebar-btn"
@@ -118,8 +116,8 @@ const Sidebar = ({
             <span>My Account</span>
           </Link>
         </div>
-      </SidebarFooter>
-    </ProSidebar>
+      </SidebarFooter> */}
+    </Sidebar>
   );
 };
 

@@ -8,15 +8,14 @@ import Button from 'react-bootstrap/Button';
 function NavigationBar() {
   return (
     <>
-        <Navbar>
-
-          <Navbar.Brand style={{ paddingLeft: "20px" }}>
-            <h3>Premium Pension</h3>
-          </Navbar.Brand>
-          <Navbar.Collapse className='justify-content-end mx-5 '>
-            <Button className='btn-primary'><i className="bi bi-box-arrow-in-left"></i>Logout</Button>
-          </Navbar.Collapse>
-        </Navbar>
+      <Navbar>
+        <Navbar.Brand style={{ paddingLeft: "20px" }}>
+        <h3>Premium Pension</h3>
+        </Navbar.Brand>
+        <Navbar.Collapse className='justify-content-end mx-5 '>
+          <Button className='btn-primary'><i className="bi bi-box-arrow-in-left"></i>Logout</Button>
+        </Navbar.Collapse>
+      </Navbar>
     </>
   );
 }
