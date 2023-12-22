@@ -6,7 +6,7 @@ import { faUserCircle } from "@fortawesome/free-regular-svg-icons";
 import { Row, Col, Nav, Form, Image, Button, Navbar, Dropdown, Container, ListGroup, InputGroup } from '@themesberg/react-bootstrap';
 
 import NOTIFICATIONS_DATA from "../data/notifications";
-import pplLogo from "../assets/img/team/pplLogo.jpg";
+import PPLLogo from "../assets/img/team/pplLogo.jpg";
 
 
 export default (props) => {
@@ -51,7 +51,15 @@ export default (props) => {
       <Container fluid className="px-0">
         <div className="d-flex justify-content-between w-100">
           <div className="d-flex align-items-center">
-              <Navbar.Brand style={{color: 'black'}} ><h3>Premium Pension</h3></Navbar.Brand>
+            <Navbar.Brand style={{color: 'black'}} className="inline-block m-2" >
+              <img
+              alt="pension icon"
+              src={PPLLogo}
+              width="40"
+              height="50"
+            />
+            <h3>Premium Pension</h3>
+            </Navbar.Brand>
           </div>
           <Nav className="align-items-center">
             <Dropdown className="btn-toolbar">
@@ -79,7 +87,7 @@ export default (props) => {
             <Dropdown as={Nav.Item}>
               <Dropdown.Toggle as={Nav.Link} className="pt-1 px-0">
                 <div className="media d-flex align-items-center">
-                  {/* <Image src={Profile3} className="user-avatar md-avatar rounded-circle" /> */}
+                  
                   <div className="media-body ms-2 text-dark align-items-center d-none d-lg-block">
                     <span className="mb-0 font-small fw-bold">"Name"</span>
                   </div>
