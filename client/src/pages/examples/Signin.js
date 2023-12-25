@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faUnlockAlt, faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { Col, Row, Form, Button, Container, InputGroup } from '@themesberg/react-bootstrap';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-// import { Routes } from "../../routes";
+import { Routes } from "../../routes";
 // import BgImage from "./../assets/img/illustrations/signin.svg";
 
 function Signin(){
@@ -19,30 +19,30 @@ function Signin(){
   const[error, setError] = useState('')
 
 
-  const forLogin = async () => {  
-    try {
-      const response = await axios.post('http://localhost:3000/api/login',{
-        username, password
-      });
+  // const forLogin = async () => {  
+  //   try {
+  //     const response = await axios.post('http://localhost:3000/api/login',{
+  //       username, password
+  //     });
 
-      let code = response.data.code;
-      let msg = response.data.msg;
+  //     let code = response.data.code;
+  //     let msg = response.data.msg;
 
-      console.log(msg); 
+  //     console.log(msg); 
 
-      if (code === 200){
+  //     if (code === 200){
     
-        setError('')
-        console.log(code)
-        window.location.href = "/#/dashboard/overview"
+  //       setError('')
+  //       console.log(code)
+  //       window.location.href = "/#/dashboard/overview"
 
-      }else{
-        setError(msg)
-      }
-    } catch (error) {
-      console.error(error.response.data); 
-    }
-  };
+  //     }else{
+  //       setError(msg)
+  //     }
+  //   } catch (error) {
+  //     console.error(error.response.data); 
+  //   }
+  // };
 
   const handlePasswordChange =(event)=>{
       setPasswordInput(event.target.value);
@@ -76,7 +76,7 @@ function Signin(){
                       <InputGroup.Text>
                         <FontAwesomeIcon icon={faUser} />
                       </InputGroup.Text>
-                      <Form.Control autoFocus required type="text" placeholder="User Name" onChange={(e) => setusername(e.target.value)}/>
+                      <Form.Control autoFocus type="text" placeholder="User Name" onChange={(e) => setusername(e.target.value)}/>
                     </InputGroup>
                   </Form.Group>
                   <Form.Group>
@@ -93,9 +93,10 @@ function Signin(){
                       </InputGroup>
                     </Form.Group>
                   </Form.Group>
-                  <Button variant="primary" type="submit" className="w-100" onClick={forLogin}>
-                    log in
-                  </Button>
+                  <h6>Server error Click on log in</h6>
+                  <Link to={Routes.DashboardOverview.path} className="w-100 btn btn-primary">
+                    Log in
+                  </Link>
                 </Form>
 
               </div>

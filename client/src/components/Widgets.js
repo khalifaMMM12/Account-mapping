@@ -162,13 +162,13 @@ export const BarChartWidget = (props) => {
   );
 };
 
-export const TeamMembersWidget = () => {
+export const BranchWidget = () => {
   const TeamMember = (props) => {
     const { name, statusKey, image, icon, btnText } = props;
     const status = {
-      online: { color: "success", label: "Online" },
-      inMeeting: { color: "warning", label: "In a meeting" },
-      offline: { color: "danger", label: "Offline" }
+      33: { color: "success", label: "33%" },
+      50: { color: "warning", label: "50%" },
+      99: { color: "danger", label: "99%" }
     };
 
     const statusColor = status[statusKey] ? status[statusKey].color : 'danger'
@@ -177,11 +177,11 @@ export const TeamMembersWidget = () => {
     return (
       <ListGroup.Item className="px-0">
         <Row className="align-items-center">
-          <Col className="col-auto">
+          {/* <Col className="col-auto">
             <a href="#top" className="user-avatar">
               <Image src={image} className="rounded-circle" />
             </a>
-          </Col>
+          </Col> */}
           <Col className="ms--2">
             <h4 className="h6 mb-0">
               <a href="#!">{name}</a>
@@ -202,7 +202,7 @@ export const TeamMembersWidget = () => {
   return (
     <Card border="light" className="shadow-sm">
       <Card.Header className="border-bottom border-light d-flex justify-content-between">
-        <h5 className="mb-0">Team members</h5>
+        <h5 className="mb-0">Teams</h5>
         <Button variant="secondary" size="sm">See all</Button>
       </Card.Header>
       <Card.Body>
@@ -221,11 +221,11 @@ export const ProgressTrackWidget = () => {
 
     return (
       <Row className={`align-items-center ${extraClassName}`}>
-        <Col xs="auto">
+        {/* <Col xs="auto">
           <span className={`icon icon-md text-${color}`}>
             <FontAwesomeIcon icon={icon} className="me-1" />
           </span>
-        </Col>
+        </Col> */}
         <Col>
           <div className="progress-wrapper">
             <div className="progress-info">
@@ -244,15 +244,15 @@ export const ProgressTrackWidget = () => {
   return (
     <Card border="light" className="shadow-sm">
       <Card.Header className="border-bottom border-light">
-        <h5 className="mb-0">Progress track</h5>
+        <h5 className="mb-0">Branch AUM Tracker</h5>
       </Card.Header>
       <Card.Body>
 
-        <Progress title="Rocket - SaaS Template" color="purple" icon={faBootstrap} percentage={34} />
-        <Progress title="Pixel - Design System" color="danger" icon={faAngular} percentage={60} />
-        <Progress title="Spaces - Listings Template" color="tertiary" icon={faVuejs} percentage={45} />
-        <Progress title="Stellar - Dashboard" color="info" icon={faReact} percentage={35} />
-        <Progress last title="Volt - Dashboard" color="purple" icon={faBootstrap} percentage={34} />
+        <Progress title="Wuse" color="purple" percentage={34} />
+        <Progress title="Garki" color="danger" percentage={60} />
+        <Progress title="Gwarimpa" color="tertiary" percentage={45} />
+        <Progress title="Branch D" color="info" percentage={35} />
+        <Progress last title="Branch E" color="purple" percentage={34} />
       </Card.Body>
     </Card>
   );

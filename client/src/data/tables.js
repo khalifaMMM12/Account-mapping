@@ -10,12 +10,12 @@ import JapanFlag from '../assets/img/flags/japan.svg';
 import ItalyFlag from '../assets/img/flags/italy.svg';
 
 
-const pageVisits = [
-    { id: 1, views: 4.525, returnValue: 255, bounceRate: 42.55, pageName: "/demo/admin/index.html" },
-    { id: 2, views: 2.987, returnValue: 139, bounceRate: -43.52, pageName: "/demo/admin/forms.html" },
-    { id: 3, views: 2.844, returnValue: 124, bounceRate: -32.35, pageName: "/demo/admin/util.html" },
-    { id: 4, views: 1.220, returnValue: 55, bounceRate: 15.78, pageName: "/demo/admin/validation.html" },
-    { id: 5, views: 505, returnValue: 3, bounceRate: -75.12, pageName: "/demo/admin/modals.html" }
+const Agents = [
+    { id: 1, AUM: 675000, Accounts: 90, bounceRate: 42.55, AgentName: "NAME SURNAME" },
+    { id: 2, AUM: 987987, Accounts: 98, bounceRate: -43.52, AgentName: "NAME SURNAME" },
+    { id: 3, AUM: 967844, Accounts: 98, bounceRate: -32.35, AgentName: "NAME SURNAME" },
+    { id: 4, AUM: 1344220, Accounts: 132, bounceRate: 15.78, AgentName: "NAME SURNAME" },
+    { id: 5, AUM: 2535000, Accounts: 234, bounceRate: -75.12, AgentName: "NAME SURNAME" }
 ];
 
 const pageTraffic = [
@@ -43,7 +43,7 @@ const invoiceItems = [
 ];
 
 export {
-    pageVisits,
+    Agents,
     pageTraffic,
     pageRanking,
     invoiceItems,

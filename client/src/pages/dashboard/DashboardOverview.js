@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCashRegister, faChartLine, faCloudUploadAlt, faPlus, faRocket, faTasks, faUserShield } from '@fortawesome/free-solid-svg-icons';
 import { Col, Row, Button, Dropdown, ButtonGroup } from '@themesberg/react-bootstrap';
 
-import { CounterWidget, CircleChartWidget, BarChartWidget, TeamMembersWidget, ProgressTrackWidget, RankingWidget, AUMWidget, AUMWidgetPhone, AcquisitionWidget } from "../../components/Widgets";
-import { PageVisitsTable } from "../../components/Tables";
+import { CounterWidget, CircleChartWidget, BarChartWidget, BranchWidget, ProgressTrackWidget, RankingWidget, AUMWidget, AUMWidgetPhone, AcquisitionWidget } from "../../components/Widgets";
+import { AgentTable } from "../../components/Tables";
 import { Inflows,  totalAum} from "../../data/charts";
 
 export default () => {
@@ -73,7 +73,7 @@ export default () => {
       <Col xs={12} className="mb-4 d-none d-sm-block">
           <AUMWidget
            title="Total AUM"
-            value="10,567"
+            value="2,567,000,000"
             percentage={10.57}
           />
         </Col>
@@ -91,11 +91,11 @@ export default () => {
             <Col xs={12} xl={8} className="mb-4">
               <Row>
                 <Col xs={12} className="mb-4">
-                  <PageVisitsTable/>
+                  <AgentTable/>
                 </Col>
 
                 <Col xs={12} lg={6} className="mb-4">
-                  <TeamMembersWidget/>
+                  <BranchWidget/>
                 </Col>
 
                 <Col xs={12} lg={6} className="mb-4">
@@ -118,9 +118,9 @@ export default () => {
                   <RankingWidget/>
                 </Col>
 
-                <Col xs={12} className="px-0">
+                {/* <Col xs={12} className="px-0">
                   <AcquisitionWidget/>
-                </Col>
+                </Col> */}
               </Row>
             </Col>
           </Row>
