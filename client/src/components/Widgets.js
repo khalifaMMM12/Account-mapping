@@ -1,7 +1,7 @@
 
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown, faAngleUp, faChartArea, faChartBar, faChartLine, faFlagUsa, faFolderOpen, faGlobeEurope, faPaperclip, faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown, faAngleUp, faChartArea, faChartBar, faChartLine, faProjectDiagram, faQuestionCircle, faGlobeEurope, faPaperclip, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 import { faAngular, faBootstrap, faReact, faVuejs } from "@fortawesome/free-brands-svg-icons";
 import { Col, Row, Card, Image, Button, ListGroup, ProgressBar } from '@themesberg/react-bootstrap';
 import { CircleChart, BarChart, AUMChart, AUMChartphone } from "./Charts";
@@ -264,37 +264,37 @@ export const RankingWidget = () => {
       <Card.Body>
         <div className="d-flex align-items-center justify-content-between border-bottom border-light pb-3">
           <div>
-            <h6><FontAwesomeIcon icon={faGlobeEurope} className="icon icon-xs me-3" /> Global Rank</h6>
+            <h6><FontAwesomeIcon icon={faChartBar} className="icon icon-xs me-3" />Accounts</h6>
           </div>
           <div>
             <Card.Link href="#" className="text-primary fw-bold">
-              #755 <FontAwesomeIcon icon={faChartLine} className="ms-2" />
+              #300 <FontAwesomeIcon icon={faChartLine} className="ms-2" />
             </Card.Link>
           </div>
         </div>
         <div className="d-flex align-items-center justify-content-between border-bottom border-light py-3">
           <div>
-            <h6 className="mb-0"><FontAwesomeIcon icon={faFlagUsa} className="icon icon-xs me-3" />Country Rank</h6>
+            <h6 className="mb-0"><FontAwesomeIcon icon={faQuestionCircle} className="icon icon-xs me-3" />Unmapped Accounts</h6>
             <div className="small card-stats">
-              United States <FontAwesomeIcon icon={faAngleUp} className="icon icon-xs text-success ms-2" />
+              {/* United States <FontAwesomeIcon icon={faAngleUp} className="icon icon-xs text-success ms-2" /> */}
             </div>
           </div>
           <div>
             <Card.Link href="#top" className="text-primary fw-bold">
-              #32 <FontAwesomeIcon icon={faChartLine} className="ms-2" />
+              #150 <FontAwesomeIcon icon={faChartLine} className="ms-2" />
             </Card.Link>
           </div>
         </div>
         <div className="d-flex align-items-center justify-content-between pt-3">
           <div>
-            <h6 className="mb-0"><FontAwesomeIcon icon={faFolderOpen} className="icon icon-xs me-3" />Category Rank</h6>
-            <Card.Link href="#top" className="small card-stats">
+            <h6 className="mb-0"><FontAwesomeIcon icon={faProjectDiagram}  className="icon icon-xs me-3" />Mapped Accounts</h6>
+            {/* <Card.Link href="#top" className="small card-stats">
               Travel &gt; Accomodation
-            </Card.Link>
+            </Card.Link> */}
           </div>
           <div>
             <Card.Link href="#top" className="text-primary fw-bold">
-              #16 <FontAwesomeIcon icon={faChartLine} className="ms-2" />
+              #150 <FontAwesomeIcon icon={faChartLine} className="ms-2" />
             </Card.Link>
           </div>
         </div>
